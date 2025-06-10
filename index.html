@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwords</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ДОМОФОН</h2>
+        <div id="stage-display">КОД 1</div>
+        <div class="display">
+            <span class="letter" id="letter1">-</span>
+            <span class="letter" id="letter2">-</span>
+            <span class="letter" id="letter3">-</span>
+            <span class="letter" id="letter4">-</span>
+            <span class="letter" id="letter5">-</span>
+        </div>
+        <div class="controls">
+            <div style="display: flex; justify-content: space-around;">
+                <div class="column">
+                    <button class="arrow-btn" id="up1" onclick="changeLetter(1, 1)">▲</button>
+                    <button class="arrow-btn" id="down1" onclick="changeLetter(1, -1)">▼</button>
+                </div>
+                <div class="column">
+                    <button class="arrow-btn" id="up2" onclick="changeLetter(2, 1)">▲</button>
+                    <button class="arrow-btn" id="down2" onclick="changeLetter(2, -1)">▼</button>
+                </div>
+                <div class="column">
+                    <button class="arrow-btn" id="up3" onclick="changeLetter(3, 1)">▲</button>
+                    <button class="arrow-btn" id="down3" onclick="changeLetter(3, -1)">▼</button>
+                </div>
+                <div class="column">
+                    <button class="arrow-btn" id="up4" onclick="changeLetter(4, 1)">▲</button>
+                    <button class="arrow-btn" id="down4" onclick="changeLetter(4, -1)">▼</button>
+                </div>
+                <div class="column">
+                    <button class="arrow-btn" id="up5" onclick="changeLetter(5, 1)">▲</button>
+                    <button class="arrow-btn" id="down5" onclick="changeLetter(5, -1)">▼</button>
+                </div>
+            </div>
+            <button class="submit-btn" id="submit-btn" onclick="submitPassword()">ПРИНЯТЬ</button>
+        </div>
+        <div class="status" id="status"></div>
+        <div id="error-message" class="error-message">НУ ТЫ ВЫДАЛ, ДАВАЙ ЗАНОВО СЫН МАТЕРИ СВОЕЙ</div>
+        <div id="completion-message" class="completion-message">Poker3Night</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
